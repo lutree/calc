@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:gravity="center_vertical|right"
+        android:hint="0"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/linear1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/stack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|right"
+        android:paddingRight="20sp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/result"
+        app:layout_constraintRight_toRightOf="@id/result"
+        app:layout_constraintTop_toTopOf="@id/result"
+        tools:text="123+" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/linear2"
+        app:layout_constraintTop_toBottomOf="@id/result">
+
+        <TextView
+            android:id="@+id/btn_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_negative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="+/-"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_percent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_division"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/linear3"
+        app:layout_constraintTop_toBottomOf="@id/linear1">
+
+        <TextView
+            android:id="@+id/btn_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_mul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/linear4"
+        app:layout_constraintTop_toBottomOf="@id/linear2">
+
+        <TextView
+            android:id="@+id/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_minus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/linear5"
+        app:layout_constraintTop_toBottomOf="@id/linear3">
+
+        <TextView
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/btn_plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear4">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="."
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/guideline"
+            app:layout_constraintRight_toLeftOf="@+id/btn_result" />
+
+        <TextView
+            android:id="@+id/btn_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/btn_dot"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
